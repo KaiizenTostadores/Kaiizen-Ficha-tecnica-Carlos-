@@ -401,14 +401,15 @@
         import { getFirestore, doc, getDoc, setDoc } from 'https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js';
 
         // Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyCHqqCGqYDR37QD30G-jURIf1EgW1LIhZ8",
-            authDomain: "kaiizen-cafe-ficha-marlon-b.firebaseapp.com",
-            projectId: "kaiizen-cafe-ficha-marlon-b",
-            storageBucket: "kaiizen-cafe-ficha-marlon-b.firebasestorage.app",
-            messagingSenderId: "1055411680783",
-            appId: "1:1055411680783:web:59adfe2acf6d452820d57a"
-        };
+       const firebaseConfig = {
+  apiKey: "AIzaSyAbFtZR7Okux_5vd_tJIu4zBpsCTpJ2jN8",
+  authDomain: "ficha-tecnica-carlos.firebaseapp.com",
+  projectId: "ficha-tecnica-carlos",
+  storageBucket: "ficha-tecnica-carlos.firebasestorage.app",
+  messagingSenderId: "808014280990",
+  appId: "1:808014280990:web:752f31a4a5cf5fa057b10f"
+};
+
 
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
@@ -459,7 +460,7 @@
             }
 
             try {
-                const docRef = window.doc(window.db, "cafe-data", "ficha-principal");
+                const docRef = window.doc(window.db, "Cafe data Carlos vinasco", "ficah tecnica cafe costante");
                 const docSnap = await window.getDoc(docRef);
                 
                 if (docSnap.exists()) {
@@ -516,7 +517,7 @@
             }
 
             try {
-                const docRef = window.doc(window.db, "cafe-data", "ficha-principal");
+                const docRef = window.doc(window.db, "Cafe data Carlos vinasco", "ficah tecnica cafe costante");
                 await window.setDoc(docRef, data);
                 return true;
             } catch (error) {
