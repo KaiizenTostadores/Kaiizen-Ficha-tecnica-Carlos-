@@ -460,7 +460,7 @@
             }
 
             try {
-                const docRef = window.doc(window.db, "Cafe data Carlos vinasco", "ficah tecnica cafe costante");
+                const docRef = window.doc(window.db, "cafe-data-carlos", "ficha-carlos");
                 const docSnap = await window.getDoc(docRef);
                 
                 if (docSnap.exists()) {
@@ -517,7 +517,7 @@
             }
 
             try {
-                const docRef = window.doc(window.db, "Cafe data Carlos vinasco", "ficah tecnica cafe costante");
+                const docRef = window.doc(window.db, "cafe-data-carlos", "ficha-carlos");
                 await window.setDoc(docRef, data);
                 return true;
             } catch (error) {
